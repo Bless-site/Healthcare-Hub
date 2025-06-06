@@ -5,21 +5,7 @@ body {
   padding: 0;
   background: #f5f8fc;
 }
-header {
-  background-color: #007BFF;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-.container {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s ease-in-out;
-}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -140,51 +126,6 @@ button:hover {
     }
   }
   
-/* Dark Mode */
-body.dark {
-  background: #121212;
-  color: #f0f0f0;
-}
-body.dark header {
-  background-color: #1f1f1f;
-}
-body.dark .card {
-  background: #333;
-  color: #f0f0f0;
-}
-body.dark .card:hover {
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
-}
-body.dark {
-  background: #121212;
-  color: #f0f0f0;
-}
-
-body.dark header,
-body.dark footer {
-  color: #f0f0f0;
-}
-body.dark h1,
-body.dark h2,
-body.dark .card-title,
-body.dark .card-text,
-body.dark .card {
-  color: #ffffff;
-}
-
-body.dark form{
-  color: #000;
-
-
-}
-
-body.dark a {
-  color: #ddd;
-}
-
-body.dark .card:hover {
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
-}
 
 
 /* 💻 Laptops and Desktops (769px and up) */
