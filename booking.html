@@ -21,7 +21,7 @@
         padding: 20px;
     }
     
-     .navbar {
+      .navbar {
       display: flex;
       align-items: center;
       background-color: #3498db;
@@ -48,41 +48,10 @@
       cursor: pointer;
     }
 
-    @media (max-width: 768px) {
-      .navbar .nav-links {
-        flex-direction: column; /* Stack navigation items vertically */
-        width: 100%;
-        align-items: stretch; /* Stretch to full width */
-      }
-
-      .columns-container {
-        flex-direction: column; /* Stack columns vertically */
-      }
-
-      .main-content .column {
-        width: 100%; /* Full width on small screens */
-        height: auto; /* Allow height to adjust */
-      }
-      
-      .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
-      }
-    }
-
-    @media (max-width: 480px) {
-      .navbar .logo img {
-        height: 40px; /* Reduce logo size */
-      }
-
-      .nav-links button {
-        padding: 8px; /* Reduce padding for buttons */
-      }
-
-  
+    /* Style for the search bar */
     .search-bar {
       display: flex;
       align-items: center; /* Center vertically */
-      margin-left: auto; /* Push search bar to the right */
     }
 
     .search-bar input {
@@ -99,6 +68,46 @@
       border-radius: 0 5px 5px 0; /* Rounded corners for the right side */
       cursor: pointer;
     }
+
+    
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      .navbar .nav-links {
+        flex-direction: column; /* Stack navigation items vertically */
+        width: 100%;
+        align-items: stretch; /* Stretch to full width */
+      }
+
+      
+      
+      .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar .logo img {
+        height: 40px; /* Reduce logo size */
+      }
+
+      .nav-links button {
+        padding: 8px; /* Reduce padding for buttons */
+      }
+
+      .search-bar input {
+        padding: 8px; /* Reduce padding for input */
+      }
+
+      .search-bar button {
+        padding: 8px; /* Reduce padding for button */
+      }
+    }
+  
+
+     
+      
+     
 
     .footer {
       background-color: #3498db;
