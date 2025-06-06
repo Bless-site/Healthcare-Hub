@@ -48,6 +48,36 @@
       cursor: pointer;
     }
 
+    @media (max-width: 768px) {
+      .navbar .nav-links {
+        flex-direction: column; /* Stack navigation items vertically */
+        width: 100%;
+        align-items: stretch; /* Stretch to full width */
+      }
+
+      .columns-container {
+        flex-direction: column; /* Stack columns vertically */
+      }
+
+      .main-content .column {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Allow height to adjust */
+      }
+      
+      .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar .logo img {
+        height: 40px; /* Reduce logo size */
+      }
+
+      .nav-links button {
+        padding: 8px; /* Reduce padding for buttons */
+      }
+
   
     .search-bar {
       display: flex;
