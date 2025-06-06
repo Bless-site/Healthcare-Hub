@@ -159,6 +159,33 @@
   flex: 1 1 45%;
   margin: 10px;
 }
+    .footer {
+      background-color: #3498db;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .footer .copyright {
+      background-color: #2c3e50;
+      padding: 5px 10px;
+      color: white;
+      flex: 1; /* Allow copyright to take available space */
+      text-align: left; /* Align text to the left */
+    }
+
+    .footer .social-icons {
+      display: flex; /* Use flexbox for social icons */
+      align-items: center; /* Center icons vertically */
+    }
+
+    .footer .social-icons img {
+      width: 30px;
+      margin-left: 10px;
+    }
+
   </style>
 </head>
 
@@ -243,5 +270,17 @@
   <script> document.getElementById('hamburgerMenu').addEventListener('click', () => {
     document.getElementById('navLinks').classList.toggle('show');
   });</script>
+
+  
 </body>
+   <div class="footer">
+    <div class="copyright"><p>&copy; 2025 Healthcare Access & Information Hub. All rights reserved.</p></div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/affinityhealthcoza/about/"><img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/healthcareinc/"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+      <a href="https://x.com/healthcareinc"><img src="https://img.icons8.com/ios-filled/50/x.png" alt="X"></a>
+      <a href="https://za.linkedin.com/company/universal-healthcare-sa"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+
 </html>
