@@ -90,14 +90,19 @@ button:hover {
     background-color: #2c3e50;
     padding: 5px 10px;
     color: white;
-    flex: 1 1 100%; /* Full width on small screens */
-    text-align: center;
+    flex: 1; /* Full width on small screens */
+    text-align: left;
   }
   
-  .footer .social-icons img {
-    width: 30px;
-    margin-left: 10px;
-  }
+   .footer .social-icons {
+      display: flex; /* Use flexbox for social icons */
+      align-items: center; /* Center icons vertically */
+    }
+
+    .footer .social-icons img {
+      width: 30px;
+      margin-left: 10px;
+    }
 
   .hamburger {
     display: none;
