@@ -23,3 +23,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 document.getElementById("toggleDarkMode").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
+document.getElementById('hamburgerMenu').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('show');
+});
