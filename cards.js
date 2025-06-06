@@ -25,3 +25,6 @@ function searchResource() {
     alert('No matching resources found. Try searching for "diabetes", "telemedicine", or "support".');
   }
 }
+document.getElementById('hamburgerMenu').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('show');
+});
